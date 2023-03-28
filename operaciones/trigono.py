@@ -14,22 +14,22 @@ class trigono(expression):
             left_num = self.left.evaluate(None)
         
         if self.type.evaluate(node) == 'Seno':
-            return math.sin(left_num)
+            return math.sin(float(left_num))
         
         elif self.type.evaluate(node) == 'Coseno':
-            return math.cos(left_num)
+            return math.cos(float(left_num))
         
         elif self.type.evaluate(node) == 'Tangente':
-            return math.tan(left_num)
+            return math.tan(float(left_num))
         
         elif self.type.evaluate(node) == 'Cotangente':
-            return 1/math.tan(left_num)
+            return 1/math.tan(float(left_num))
         
         elif self.type.evaluate(node) == 'Secante':
-            return 1/math.cos(left_num)
+            return 1/math.cos(float(left_num))
         
         elif self.type.evaluate(node) == 'Cosecante':
-            return 1/math.sin(left_num)
+            return 1/math.sin(float(left_num))
         
         else:
             return None 

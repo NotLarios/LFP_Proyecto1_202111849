@@ -17,28 +17,28 @@ class arith(expression):
             right_num = self.right.evaluate(None)
 
         if self.type.evaluate(node) == 'Suma':
-            return left_num + right_num
+            return float(left_num) + float(right_num)
         
         elif self.type.evaluate(node) == 'Resta':
-            return left_num - right_num
+            return float(left_num) - float(right_num)
         
         elif self.type.evaluate(node) == 'Multiplicacion':
-            return left_num * right_num
+            return float(left_num) * float(right_num)
         
         elif self.type.evaluate(node) == 'Division':
-            return left_num / right_num
+            return float(left_num) / float(right_num)
         
         elif self.type.evaluate(node) == 'Modulo':
-            return left_num % right_num
+            return float(left_num) % float(right_num)
         
         elif self.type.evaluate(node) == 'Potencia':
-            return left_num ** right_num
+            return float(left_num) ** float(right_num)
         
         elif self.type.evaluate(node) == 'Raiz':
-            return left_num ** (1 / right_num)
+            return float(left_num) ** (1/float(right_num))
         
         elif self.type.evaluate(node) == 'Inverso':
-            return 1/left_num
+            return float(left_num) ** -1
         else:
             return None
         

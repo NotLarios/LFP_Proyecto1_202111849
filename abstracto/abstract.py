@@ -17,17 +17,3 @@ class expression(ABC):
     @abstractmethod
     def get_column(self):
         return self.column
-    
-    #Graphiz
-    """
-    def get_node(self):
-        return 'n' + str(self.count) + str(self.countGraph)
-    
-    def get_text(self, node):
-        pass
-    
-    def getnodeDefinition(self, index, cluster):
-        self.correlativo = index
-        self.cluster = cluster
-        return self.getGraphnode() + " [ shape=note, style=filled, fillcolor="#82589F", label=""+ self.getGraphLabel() + ""]; \n"
-    """
